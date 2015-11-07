@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65F4AB757858DF68A317EEE6 /* libPods-HelloBeacon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1118CBDC560FE92893951118 /* libPods-HelloBeacon.a */; };
+		6FBAC0361BEE5F3B00D62255 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0351BEE5F3B00D62255 /* AppDelegate.swift */; };
+		6FBAC0381BEE5F3B00D62255 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0371BEE5F3B00D62255 /* ViewController.swift */; };
+		6FBAC03B1BEE5F3B00D62255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBAC0391BEE5F3B00D62255 /* Main.storyboard */; };
+		6FBAC03E1BEE5F3B00D62255 /* HelloBeacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC03C1BEE5F3B00D62255 /* HelloBeacon.xcdatamodeld */; };
+		6FBAC0401BEE5F3B00D62255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FBAC03F1BEE5F3B00D62255 /* Assets.xcassets */; };
+		6FBAC0431BEE5F3B00D62255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBAC0411BEE5F3B00D62255 /* LaunchScreen.storyboard */; };
+		6FBAC04E1BEE5F3B00D62255 /* HelloBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC04D1BEE5F3B00D62255 /* HelloBeaconTests.swift */; };
+		6FBAC0591BEE5F3B00D62255 /* HelloBeaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBAC0581BEE5F3B00D62255 /* HelloBeaconUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FBAC04A1BEE5F3B00D62255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FBAC02A1BEE5F3B00D62255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FBAC0311BEE5F3B00D62255;
+			remoteInfo = HelloBeacon;
+		};
+		6FBAC0551BEE5F3B00D62255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FBAC02A1BEE5F3B00D62255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FBAC0311BEE5F3B00D62255;
+			remoteInfo = HelloBeacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1118CBDC560FE92893951118 /* libPods-HelloBeacon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloBeacon.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63EEACC9AEA363A87364C088 /* Pods-HelloBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloBeacon/Pods-HelloBeacon.debug.xcconfig"; sourceTree = "<group>"; };
+		6F1DB2591BEE7BE800F377CA /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		6FBAC0321BEE5F3B00D62255 /* HelloBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloBeacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBAC0351BEE5F3B00D62255 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6FBAC0371BEE5F3B00D62255 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6FBAC03A1BEE5F3B00D62255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6FBAC03D1BEE5F3B00D62255 /* HelloBeacon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelloBeacon.xcdatamodel; sourceTree = "<group>"; };
+		6FBAC03F1BEE5F3B00D62255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FBAC0421BEE5F3B00D62255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6FBAC0441BEE5F3B00D62255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FBAC0491BEE5F3B00D62255 /* HelloBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloBeaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBAC04D1BEE5F3B00D62255 /* HelloBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloBeaconTests.swift; sourceTree = "<group>"; };
+		6FBAC04F1BEE5F3B00D62255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FBAC0541BEE5F3B00D62255 /* HelloBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloBeaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBAC0581BEE5F3B00D62255 /* HelloBeaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloBeaconUITests.swift; sourceTree = "<group>"; };
+		6FBAC05A1BEE5F3B00D62255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5AADAFE1251F0DCC50216F /* Pods-HelloBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloBeacon/Pods-HelloBeacon.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FBAC02F1BEE5F3B00D62255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4AB757858DF68A317EEE6 /* libPods-HelloBeacon.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBAC0461BEE5F3B00D62255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBAC0511BEE5F3B00D62255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0243218BF652F0F9B259FAC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63EEACC9AEA363A87364C088 /* Pods-HelloBeacon.debug.xcconfig */,
+				CE5AADAFE1251F0DCC50216F /* Pods-HelloBeacon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6FBAC0291BEE5F3B00D62255 = {
+			isa = PBXGroup;
+			children = (
+				6FBAC0341BEE5F3B00D62255 /* HelloBeacon */,
+				6FBAC04C1BEE5F3B00D62255 /* HelloBeaconTests */,
+				6FBAC0571BEE5F3B00D62255 /* HelloBeaconUITests */,
+				6FBAC0331BEE5F3B00D62255 /* Products */,
+				0243218BF652F0F9B259FAC9 /* Pods */,
+				76C52EE4394BB810D05BB3B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6FBAC0331BEE5F3B00D62255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FBAC0321BEE5F3B00D62255 /* HelloBeacon.app */,
+				6FBAC0491BEE5F3B00D62255 /* HelloBeaconTests.xctest */,
+				6FBAC0541BEE5F3B00D62255 /* HelloBeaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FBAC0341BEE5F3B00D62255 /* HelloBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				6FBAC0351BEE5F3B00D62255 /* AppDelegate.swift */,
+				6FBAC0371BEE5F3B00D62255 /* ViewController.swift */,
+				6FBAC0391BEE5F3B00D62255 /* Main.storyboard */,
+				6FBAC03F1BEE5F3B00D62255 /* Assets.xcassets */,
+				6FBAC0411BEE5F3B00D62255 /* LaunchScreen.storyboard */,
+				6FBAC0441BEE5F3B00D62255 /* Info.plist */,
+				6FBAC03C1BEE5F3B00D62255 /* HelloBeacon.xcdatamodeld */,
+				6F1DB2591BEE7BE800F377CA /* ObjCBridge.h */,
+			);
+			path = HelloBeacon;
+			sourceTree = "<group>";
+		};
+		6FBAC04C1BEE5F3B00D62255 /* HelloBeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FBAC04D1BEE5F3B00D62255 /* HelloBeaconTests.swift */,
+				6FBAC04F1BEE5F3B00D62255 /* Info.plist */,
+			);
+			path = HelloBeaconTests;
+			sourceTree = "<group>";
+		};
+		6FBAC0571BEE5F3B00D62255 /* HelloBeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6FBAC0581BEE5F3B00D62255 /* HelloBeaconUITests.swift */,
+				6FBAC05A1BEE5F3B00D62255 /* Info.plist */,
+			);
+			path = HelloBeaconUITests;
+			sourceTree = "<group>";
+		};
+		76C52EE4394BB810D05BB3B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1118CBDC560FE92893951118 /* libPods-HelloBeacon.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FBAC0311BEE5F3B00D62255 /* HelloBeacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FBAC05D1BEE5F3B00D62255 /* Build configuration list for PBXNativeTarget "HelloBeacon" */;
+			buildPhases = (
+				ACBD4670D6E832F530C84AB6 /* Check Pods Manifest.lock */,
+				6FBAC02E1BEE5F3B00D62255 /* Sources */,
+				6FBAC02F1BEE5F3B00D62255 /* Frameworks */,
+				6FBAC0301BEE5F3B00D62255 /* Resources */,
+				DBE942B42C6E0CCEBF87AAE0 /* Embed Pods Frameworks */,
+				129CEDBF7032CCF5B9E82947 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloBeacon;
+			productName = HelloBeacon;
+			productReference = 6FBAC0321BEE5F3B00D62255 /* HelloBeacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FBAC0481BEE5F3B00D62255 /* HelloBeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FBAC0601BEE5F3B00D62255 /* Build configuration list for PBXNativeTarget "HelloBeaconTests" */;
+			buildPhases = (
+				6FBAC0451BEE5F3B00D62255 /* Sources */,
+				6FBAC0461BEE5F3B00D62255 /* Frameworks */,
+				6FBAC0471BEE5F3B00D62255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FBAC04B1BEE5F3B00D62255 /* PBXTargetDependency */,
+			);
+			name = HelloBeaconTests;
+			productName = HelloBeaconTests;
+			productReference = 6FBAC0491BEE5F3B00D62255 /* HelloBeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FBAC0531BEE5F3B00D62255 /* HelloBeaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FBAC0631BEE5F3B00D62255 /* Build configuration list for PBXNativeTarget "HelloBeaconUITests" */;
+			buildPhases = (
+				6FBAC0501BEE5F3B00D62255 /* Sources */,
+				6FBAC0511BEE5F3B00D62255 /* Frameworks */,
+				6FBAC0521BEE5F3B00D62255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FBAC0561BEE5F3B00D62255 /* PBXTargetDependency */,
+			);
+			name = HelloBeaconUITests;
+			productName = HelloBeaconUITests;
+			productReference = 6FBAC0541BEE5F3B00D62255 /* HelloBeaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FBAC02A1BEE5F3B00D62255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Hino Banzon";
+				TargetAttributes = {
+					6FBAC0311BEE5F3B00D62255 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					6FBAC0481BEE5F3B00D62255 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 6FBAC0311BEE5F3B00D62255;
+					};
+					6FBAC0531BEE5F3B00D62255 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 6FBAC0311BEE5F3B00D62255;
+					};
+				};
+			};
+			buildConfigurationList = 6FBAC02D1BEE5F3B00D62255 /* Build configuration list for PBXProject "HelloBeacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FBAC0291BEE5F3B00D62255;
+			productRefGroup = 6FBAC0331BEE5F3B00D62255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FBAC0311BEE5F3B00D62255 /* HelloBeacon */,
+				6FBAC0481BEE5F3B00D62255 /* HelloBeaconTests */,
+				6FBAC0531BEE5F3B00D62255 /* HelloBeaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FBAC0301BEE5F3B00D62255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBAC0431BEE5F3B00D62255 /* LaunchScreen.storyboard in Resources */,
+				6FBAC0401BEE5F3B00D62255 /* Assets.xcassets in Resources */,
+				6FBAC03B1BEE5F3B00D62255 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBAC0471BEE5F3B00D62255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBAC0521BEE5F3B00D62255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		129CEDBF7032CCF5B9E82947 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloBeacon/Pods-HelloBeacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACBD4670D6E832F530C84AB6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE942B42C6E0CCEBF87AAE0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloBeacon/Pods-HelloBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FBAC02E1BEE5F3B00D62255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBAC0381BEE5F3B00D62255 /* ViewController.swift in Sources */,
+				6FBAC0361BEE5F3B00D62255 /* AppDelegate.swift in Sources */,
+				6FBAC03E1BEE5F3B00D62255 /* HelloBeacon.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBAC0451BEE5F3B00D62255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBAC04E1BEE5F3B00D62255 /* HelloBeaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBAC0501BEE5F3B00D62255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBAC0591BEE5F3B00D62255 /* HelloBeaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FBAC04B1BEE5F3B00D62255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FBAC0311BEE5F3B00D62255 /* HelloBeacon */;
+			targetProxy = 6FBAC04A1BEE5F3B00D62255 /* PBXContainerItemProxy */;
+		};
+		6FBAC0561BEE5F3B00D62255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FBAC0311BEE5F3B00D62255 /* HelloBeacon */;
+			targetProxy = 6FBAC0551BEE5F3B00D62255 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FBAC0391BEE5F3B00D62255 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FBAC03A1BEE5F3B00D62255 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6FBAC0411BEE5F3B00D62255 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FBAC0421BEE5F3B00D62255 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FBAC05B1BEE5F3B00D62255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FBAC05C1BEE5F3B00D62255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FBAC05E1BEE5F3B00D62255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63EEACC9AEA363A87364C088 /* Pods-HelloBeacon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloBeacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hino.HelloBeacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+			};
+			name = Debug;
+		};
+		6FBAC05F1BEE5F3B00D62255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5AADAFE1251F0DCC50216F /* Pods-HelloBeacon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloBeacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hino.HelloBeacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/ObjCBridge.h";
+			};
+			name = Release;
+		};
+		6FBAC0611BEE5F3B00D62255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelloBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hino.HelloBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloBeacon.app/HelloBeacon";
+			};
+			name = Debug;
+		};
+		6FBAC0621BEE5F3B00D62255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HelloBeaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hino.HelloBeaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloBeacon.app/HelloBeacon";
+			};
+			name = Release;
+		};
+		6FBAC0641BEE5F3B00D62255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hino.HelloBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HelloBeacon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6FBAC0651BEE5F3B00D62255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HelloBeaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hino.HelloBeaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HelloBeacon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FBAC02D1BEE5F3B00D62255 /* Build configuration list for PBXProject "HelloBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBAC05B1BEE5F3B00D62255 /* Debug */,
+				6FBAC05C1BEE5F3B00D62255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FBAC05D1BEE5F3B00D62255 /* Build configuration list for PBXNativeTarget "HelloBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBAC05E1BEE5F3B00D62255 /* Debug */,
+				6FBAC05F1BEE5F3B00D62255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FBAC0601BEE5F3B00D62255 /* Build configuration list for PBXNativeTarget "HelloBeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBAC0611BEE5F3B00D62255 /* Debug */,
+				6FBAC0621BEE5F3B00D62255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FBAC0631BEE5F3B00D62255 /* Build configuration list for PBXNativeTarget "HelloBeaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBAC0641BEE5F3B00D62255 /* Debug */,
+				6FBAC0651BEE5F3B00D62255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6FBAC03C1BEE5F3B00D62255 /* HelloBeacon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6FBAC03D1BEE5F3B00D62255 /* HelloBeacon.xcdatamodel */,
+			);
+			currentVersion = 6FBAC03D1BEE5F3B00D62255 /* HelloBeacon.xcdatamodel */;
+			path = HelloBeacon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6FBAC02A1BEE5F3B00D62255 /* Project object */;
+}
