@@ -24,16 +24,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ek-nF-s2U">
+                                <rect key="frame" x="0.0" y="94" width="600" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JjS-o1-d2W" secondAttribute="bottom" constant="514" id="KmL-bH-ZJ7"/>
+                            <constraint firstItem="2Ek-nF-s2U" firstAttribute="leading" secondItem="JjS-o1-d2W" secondAttribute="leading" id="OzI-0O-UK4"/>
+                            <constraint firstItem="2Ek-nF-s2U" firstAttribute="top" secondItem="JjS-o1-d2W" secondAttribute="bottom" constant="8" symbolic="YES" id="Tk0-9Y-L4C"/>
+                            <constraint firstItem="2Ek-nF-s2U" firstAttribute="trailing" secondItem="JjS-o1-d2W" secondAttribute="trailing" id="b7p-Bh-jGP"/>
                             <constraint firstItem="JjS-o1-d2W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f1F-6d-4wm"/>
                             <constraint firstAttribute="trailing" secondItem="JjS-o1-d2W" secondAttribute="trailing" id="f9k-Lt-Eo6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Ek-nF-s2U" secondAttribute="bottom" constant="476" id="itF-oB-INP"/>
                             <constraint firstItem="JjS-o1-d2W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="t3E-LT-hXh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nearestBeaconLabel" destination="2Ek-nF-s2U" id="CfO-cK-yZs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
