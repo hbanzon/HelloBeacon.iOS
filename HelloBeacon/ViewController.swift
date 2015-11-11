@@ -8,36 +8,36 @@
 
 import UIKit
 
-class ViewController: UIViewController, ESTBeaconManagerDelegate {
+class ViewController: UITableViewController, ESTBeaconManagerDelegate {
     
     let beaconManager = ESTBeaconManager()
     
     let beaconRegion = CLBeaconRegion(
         proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
-        identifier: "Entire House"
+        identifier: "Hino Beacons"
     )
     
-    @IBOutlet weak var nearestBeaconLabel: UILabel!
-    
+    var places : [String] = ["No Nearby Beacons"]
+
     // MARK: Sample Data Structure
     let placesByBeacons = [
         "31194:58554": [
-            "Heavenly Sandwiches": 50,
-            "Green & Green Salads": 150,
-            "Mini Panini": 325
+            "Ice Beacon": 50,
+            "Kitchen": 150,
+            "Breakfast Bar": 325
         ],
         "63029:44225": [
-            "Heavenly Sandwiches": 250,
-            "Green & Green Salads": 100,
-            "Mini Panini": 20
+            "Mint Beacon": 250,
+            "Couch": 100,
+            "Broken TV": 20,
+            "Dining Table": 10
         ],
         "52066:51215": [
-            "Heavenly Sandwiches": 350,
-            "Green & Green Salads": 500,
-            "Mini Panini": 170
+            "Blueberry Beacon": 350,
+            "Hino's Desk": 500,
+            "Home Plate": 170
         ]
     ]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,18 +68,50 @@ class ViewController: UIViewController, ESTBeaconManagerDelegate {
     }
     
     func beaconManager(manager: AnyObject, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
-        let nearestBeacon = beacons[0] as CLBeacon
-        let places = placesNearBeacon(nearestBeacon)
-        self.nearestBeaconLabel.text = places[0]
-        print(places)
+        if beacons.count == 0 {
+            self.places = ["No Nearby Beacons"]
+        } else {
+            self.places = []
+            for beacon in beacons {
+                self.places.appendContentsOf(placesNearBeacon(beacon))
+            }
+        }
         
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    
+    // MARK: - Table view data source
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    //
+    // called on UI load to fetch the number of cells to populate
+    //
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.places.count;
+    }
+    
+    //
+    // called to load updated data to the table view
+    //
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell: UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("Cell")!
+        var cellText = ""
+        if self.places.count-1 >= indexPath.row {
+            cellText = self.places[indexPath.row]
+        }
+        cell.textLabel?.text = cellText
+        return cell
+    }
 
 }
 

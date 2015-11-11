@@ -21,15 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
         self.beaconManager.delegate = self  // set the app delegate as the beacon manager's delegate
         self.beaconManager.requestAlwaysAuthorization()
         
-        // monitor a beacon
-        let myBeacon = CLBeaconRegion(
-            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
-            major: 31194,
-            minor: 58554,
-            identifier: "Ice Region"
-        )
-        self.beaconManager.startMonitoringForRegion(myBeacon)
-        
+        self.monitorBeacons()
         
         UIApplication.sharedApplication().registerUserNotificationSettings(
             UIUserNotificationSettings(forTypes: .Alert, categories: nil)
@@ -37,9 +29,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ESTBeaconManagerDelegate 
         return true
     }
     
+    func monitorBeacons() {
+        let kitchenBeacon = CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+            major: 31194,
+            minor: 58554,
+            identifier: "Kitchen"
+        )
+        self.beaconManager.startMonitoringForRegion(kitchenBeacon)
+        
+        let livingRoomBeacon = CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+            major: 63029,
+            minor: 44225,
+            identifier: "Living Room"
+        )
+        self.beaconManager.startMonitoringForRegion(livingRoomBeacon)
+        
+        let hinoDeskBeacon = CLBeaconRegion(
+            proximityUUID: NSUUID(UUIDString: "B9407F30-F5F8-466E-AFF9-25556B57FE6D")!,
+            major: 52066,
+            minor: 51215,
+            identifier: "Hino's Desk"
+        )
+        self.beaconManager.startMonitoringForRegion(hinoDeskBeacon)
+    }
+    
     func beaconManager(manager: AnyObject, didEnterRegion region: CLBeaconRegion) {
         let notification = UILocalNotification()
-        notification.alertBody = "Hello \(region.identifier)"
+        notification.alertBody = "You're at \(region.identifier)"
         UIApplication.sharedApplication().presentLocalNotificationNow(notification)
     }
     
